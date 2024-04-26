@@ -2,6 +2,14 @@
 https://www.ninjaunits.com/converters/pixels/pixels-rem/
 */
 
+:root{
+ --blanco: #ffffff;
+ --oscuro: #03053a;
+ --primario: #0077b6;
+ --secundario: #e9ff64;;
+ --gris: #e9ecef;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -9,13 +17,17 @@ body{
     font-size: 16px;/*1 rem = 10px*/
 }
 
-h1{
+
+
+.titulo{
     text-align: center;
     font-size: 3.8rem;
+    color: cornflowerblue;
 }
 
-span{
+.titulo span{
     font-size: 2rem;
+    color: #12ac1a;
 }
 
 h2{
