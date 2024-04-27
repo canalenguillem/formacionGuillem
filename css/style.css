@@ -32,9 +32,34 @@ body{
 }
 
 h2{
-    color: blue;
+    color: var(--primario);
 }
 
-nav{
-    background-color: pink;
+.contenedor{
+    width: 78%;
+    margin: 0 auto;
 }
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+}
+
