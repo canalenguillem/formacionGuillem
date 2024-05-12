@@ -94,6 +94,10 @@ h1,h2,h3{
     width: 100%;
 }
 
+.text-center{
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .w-sm-100{
         width: auto;
@@ -286,4 +290,40 @@ h1,h2,h3{
     font-size:3rem ;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+/*LISTADO*/
+.listado{
+    padding-top: 1rem;
+}
+.fila{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr;
+    padding: 2rem 0;
+    
+}
+.fila.par{
+    background-color: rgb(240, 240, 216);
+}
+
+.fila.impar{
+    background-color: rgb(219, 228, 243);
+}
+
+.cabecera{
+    padding-bottom: 1rem;
+}
+
+.campoCabecera{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    background-color: var(--gris);
+    text-align: center;
+    border: 1px solid black;
+}
+
+.campo{
+    font-size: 2rem;
+    margin: 0 2rem;
 }

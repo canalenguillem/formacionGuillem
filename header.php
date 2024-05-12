@@ -19,7 +19,7 @@
       <nav class="navegacion-principal contenedor">
         <a href="index.php">Home</a>
         <a href="tutoriales.php">Tutoriales</a>
-        <a href="cursos.php">Cursos</a>
         <a href="contacto.php">Contacto</a>
+        <a href="readcontacts.php">Mensajes</a>
       </nav>
     </div>
