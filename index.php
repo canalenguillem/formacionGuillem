@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formación En Guillem</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="titulo">Guillem Mateu <span>formación</span></h1>
-    </header>
-    <div class="nav-bg">
-      <nav class="navegacion-principal contenedor">
-        <a href="index.html">Home</a>
-        <a href="tutoriales.html">Tutoriales</a>
-        <a href="cursos.html">Cursos</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
-    <section class="hero">
+<?php include 'header.php'; ?>
+<section class="hero">
       <div class="contenido-hero">
         <h2>Formación online a tu ritmo</h2>
         <div class="informacion">
@@ -145,41 +121,7 @@
         </section>
       </div>
       <!--Cierra clase micontenido-->
-      <section>
-        <h2>Contacto</h2>
-        <form class="formulario">
-          <fieldset>
-            <legend>Contáctame enviando tus datos</legend>
-            <div class="contenedor-campos">
-                <div class="campo">
-                  <label for="nombre">Nombre</label>
-                  <input class="input-text" type="text" name="nombre" placeholder="Tu Nombre" />
-                </div>
-                <div class="campo">
-                  <label for="">Teléfono:</label>
-                  <input class="input-text" type="tel" name="telefono" placeholder="Tu teléfono" />
-                </div>
-    
-                <div class="campo">
-                  <label for="">Correo:</label>
-                  <input class="input-text" type="email" name="correo" placeholder="Tu email" />
-                </div>
-    
-                <div class="campo">
-                  <label for="">Mensaje:</label>
-                  <textarea class="input-text" name="Mensaje" id="" cols="30" rows="10"></textarea>
-                </div>
-    
-            </div><!--final contenedor campos-->
-                <div>
-                  <input class="boton w-sm-100 flex alinear-derecha" type="submit" value="Envia" />
-                </div>
-          </fieldset>
-        </form>
-      </section>
+      
     </main>
-    <footer>
-      <p>Todos los derechos reservados</p>
-    </footer>
-  </body>
-</html>
+
+    <?php include 'footer.php'; ?>

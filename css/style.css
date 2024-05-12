@@ -8,6 +8,11 @@ https://www.ninjaunits.com/converters/pixels/pixels-rem/
  --primario: #0077b6;
  --secundario: #187e29;;
  --gris: #e9ecef;
+ 
+ --success:rgb(211, 243, 216);
+ --fontSuccess: rgb(48, 83, 54);
+ --error:rgb(243, 182, 182);
+ --fontError: rgb(172, 34, 34);
 }
 
 html{
@@ -250,3 +255,35 @@ h1,h2,h3{
     border-radius: .5rem;
 }
 
+/*MENSAJE INFORMATIVO*/
+.result-save{
+    margin-bottom: 2rem;
+}
+.success{
+    background-color: var(--success);
+    color: var(--fontSuccess);
+
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: .3rem solid var(--fontSuccess);
+    padding: 3rem;
+    font-size:3rem ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.error{
+    background-color: var(--error);
+    color: var(--fontError);
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: .3rem solid var(--fontError);
+    padding: 3rem;
+    font-size:3rem ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
