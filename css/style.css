@@ -262,6 +262,7 @@ h1,h2,h3{
 /*MENSAJE INFORMATIVO*/
 .result-save{
     margin-bottom: 2rem;
+    padding-top: 1rem;
 }
 .success{
     background-color: var(--success);
@@ -298,7 +299,7 @@ h1,h2,h3{
 }
 .fila{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr 1fr;
     padding: 2rem 0;
     
 }

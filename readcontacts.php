@@ -6,6 +6,19 @@ $sql = "SELECT id, nombre, telefono, correo, mensaje, fecha_registro FROM contac
 $result = $conn->query($sql);
 ?>
 
+<?php
+    if(isset($_GET['status'])){
+        $status=$_GET['status'];
+        $msg=$_GET['msg'];
+
+        ?>
+        <div class="contenedor result-save">
+            <div class="msg <?=$status?>"><?=$msg?></div>
+        </div>
+        <?php
+    }
+?>
+
 <div class="contenedor listado">
     <?php
     if ($result->num_rows > 0) {?>
@@ -24,6 +37,9 @@ $result = $conn->query($sql);
             </div>
             <div class="campoCabecera">
                 Mensaje
+            </div>
+            <div class="campoCabecera">
+                Borrar
             </div>
         </div>
         <?php
@@ -50,6 +66,14 @@ $result = $conn->query($sql);
                 </div>
                 <div class="campo">
                     <?=$row["mensaje"]?>
+                </div>
+                <div class="btn-delete text-center">
+                    <a href="deletecontact.php?id=<?=$row['id']?>">
+                        <img width="25" src="img/btn_delete.png" alt="" srcset="">
+                    </a>
+                    <a href="updatecontact.php?id=<?=$row['id']?>">
+                        <img width="25" src="img/edit.webp" alt="" srcset="">
+                    </a>
                 </div>
             </div>
         <?php
