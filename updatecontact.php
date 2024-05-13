@@ -45,27 +45,33 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </head>
 <body>
     <h1>Editar Contacto</h1>
-    <form action="saveupdatecontact.php" method="post">
-        <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" value="<?php echo htmlspecialchars($row['nombre']); ?>" required>
-        </div>
-        <div>
-            <label for="telefono">Teléfono:</label>
-            <input type="text" name="telefono" id="telefono" value="<?php echo htmlspecialchars($row['telefono']); ?>">
-        </div>
-        <div>
-            <label for="correo">Correo:</label>
-            <input type="email" name="correo" id="correo" value="<?php echo htmlspecialchars($row['correo']); ?>" required>
-        </div>
-        <div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" required><?php echo htmlspecialchars($row['mensaje']); ?></textarea>
-        </div>
-        <div>
-            <button type="submit">Actualizar Contacto</button>
-        </div>
+    <form class="formulario" action="saveupdatecontact.php" method="post">
+        <fieldset>
+            <legend>Editar contacto</legend>
+            <div class="contenedor-campos">
+
+                <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input class="input-text" type="text" name="nombre" id="nombre" value="<?php echo htmlspecialchars($row['nombre']); ?>" required>
+                </div>
+                <div  class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input class="input-text" type="text" name="telefono" id="telefono" value="<?php echo htmlspecialchars($row['telefono']); ?>">
+                </div>
+                <div  class="campo">
+                    <label for="correo">Correo:</label>
+                    <input class="input-text" type="email" name="correo" id="correo" value="<?php echo htmlspecialchars($row['correo']); ?>" required>
+                </div>
+                <div  class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="input-text" name="mensaje" id="mensaje" required><?php echo htmlspecialchars($row['mensaje']); ?></textarea>
+                </div>
+            </div>
+            <div>
+                <button class="boton w-sm-100 flex alinear-derecha" type="submit">Actualizar Contacto</button>
+            </div>
+        </fieldset>
     </form>
 </body>
 </html>
