@@ -23,6 +23,10 @@ require "db.php";
 $email="correo@correo.com";
 $password="123456";
 
-$query = "INSERT INTO usuarios (email,password) VALUES ('${email}','${password}');";
+$passwordHash=password_hash($password,PASSWORD_DEFAULT);
+var_dump($passwordHash);
+
+$query = "INSERT INTO usuarios (email,password) VALUES ('${email}','${passwordHash}');";
 echo "${query}";
+// exit;
 mysqli_query($conn,$query);
