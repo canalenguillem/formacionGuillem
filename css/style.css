@@ -287,8 +287,8 @@ h1,h2,h3{
     margin: 0 auto;
     border-radius: 1rem;
     border: .3rem solid var(--fontError);
-    padding: 3rem;
-    font-size:3rem ;
+    padding: 1rem;
+    font-size:1.5rem ;
     font-weight: bold;
     text-transform: uppercase;
 }
