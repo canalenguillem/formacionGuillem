@@ -39,7 +39,7 @@ $result = $conn->query($sql);
                 Mensaje
             </div>
             <div class="campoCabecera">
-                Borrar
+                Acción
             </div>
         </div>
         <?php
@@ -65,14 +65,17 @@ $result = $conn->query($sql);
                     <?=$row["correo"]?>
                 </div>
                 <div class="campo">
-                    <?=$row["mensaje"]?>
+                    <?=substr($row["mensaje"],0,51)?>...
                 </div>
                 <div class="btn-delete text-center">
                     <a href="deletecontact.php?id=<?=$row['id']?>">
-                        <img width="25" src="img/btn_delete.png" alt="" srcset="">
+                        <img width="25" src="img/delete.webp" alt="" srcset="">
                     </a>
                     <a href="updatecontact.php?id=<?=$row['id']?>">
                         <img width="25" src="img/edit.webp" alt="" srcset="">
+                    </a>
+                    <a href="read.php?id=<?=$row['id']?>">
+                        <img width="25" src="img/read.webp" alt="" srcset="">
                     </a>
                 </div>
             </div>
