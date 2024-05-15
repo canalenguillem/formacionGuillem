@@ -1,4 +1,6 @@
-<?php include 'header.php'; ?>
+<?php
+
+include 'header.php'; ?>
 <section class="hero">
       <div class="contenido-hero">
         <h2>Formación online a tu ritmo</h2>

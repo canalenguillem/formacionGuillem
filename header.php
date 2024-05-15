@@ -1,3 +1,10 @@
+<?php
+  require 'funciones.php';
+  $auth=estaAutenticado() ;
+  if(!$auth){
+    header('Location: login.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
