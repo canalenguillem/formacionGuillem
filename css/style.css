@@ -139,6 +139,10 @@ h1,h2,h3{
     text-align: center;
 }
 
+.navegacion-principal a.logout{
+    color: red;
+}
+
 .navegacion-principal a:hover{
     background-color: var(--primario);
 }

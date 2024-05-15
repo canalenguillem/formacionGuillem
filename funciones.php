@@ -7,5 +7,10 @@ function estaAutenticado() : bool{
     }
 
     return false;
+}
 
+function logOut(){
+    session_start();
+    $_SESSION["usuario"]="";
+    $_SESSION['login']=false;
 }

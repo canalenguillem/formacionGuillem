@@ -28,5 +28,13 @@
         <a href="tutoriales.php">Tutoriales</a>
         <a href="contacto.php">Contacto</a>
         <a href="readcontacts.php">Mensajes</a>
+        <?php
+          if($auth):
+            ?>
+          <a class="logout" href="logout.php">Salir</a>
+
+        <?php
+          endif;
+        ?>
       </nav>
     </div>
