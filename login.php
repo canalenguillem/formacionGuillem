@@ -50,6 +50,7 @@ if($_SERVER['REQUEST_METHOD']==="POST"){
                 session_start();
                 $_SESSION["usuario"]=$usuario["email"];
                 $_SESSION["login"]=true;
+                $_SESSION["id"]=$usuario["id"];
                 // var_dump($_SESSION);
                 header('Location: index.php');
 

@@ -28,6 +28,7 @@
         <a href="tutoriales.php">Tutoriales</a>
         <a href="contacto.php">Contacto</a>
         <a href="readcontacts.php">Mensajes</a>
+        <a href="upload.php">Upload</a>
         <?php
           if($auth):
             ?>
