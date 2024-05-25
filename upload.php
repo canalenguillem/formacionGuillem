@@ -137,7 +137,9 @@ if ($result->num_rows > 0) { ?>
             $ruta = $row["ruta_imagen"];
             ?>
             <div class="card">
-                <img src="<?= $ruta ?>" alt="">
+                <a href="<?=$ruta?>" data-lightbox="gallery">
+                    <img src="<?= $ruta ?>" alt="">
+                </a>
                 <div class="card-content">
                     <a href="upload.php?foto_id=<?=$row['id']?>">X</a>
                 </div>
