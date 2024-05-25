@@ -34,7 +34,13 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
 }
-
+a{
+    text-decoration: none;
+   
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 h1 {
     font-size: 3.8rem;
 }
@@ -369,4 +375,26 @@ h3 {
         grid-template-columns: repeat(3, 1fr);
 
     }
+}
+
+/*boton borrar*/
+.gallery .card{
+    position: relative;
+}
+
+.gallery .card .card-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.gallery .card .card-content a{
+    background-color: red;
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+
 }
