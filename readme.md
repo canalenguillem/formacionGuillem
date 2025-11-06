@@ -4,8 +4,6 @@
 * ext install oderwat.indent-rainbow
 * ext install ritwickdey.LiveServer
 * ext install CoenraadS.bracket-pair-colorizer-2
-* GitHub.github-vscode-theme
-* vscode-icons-team.vscode-icons
 
 ## Temas
 Name: GitHub Theme
