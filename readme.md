@@ -4,11 +4,7 @@
 * ext install oderwat.indent-rainbow
 * ext install ritwickdey.LiveServer
 * ext install CoenraadS.bracket-pair-colorizer-2
-* ext install thekalinga.bootstrap4-vscode
-* ext install formulahendry.auto-rename-tag
-* ext install TabNine.tabnine-vscode
 * GitHub.github-vscode-theme
-* shellcheck
 * vscode-icons-team.vscode-icons
 
 ## Temas
